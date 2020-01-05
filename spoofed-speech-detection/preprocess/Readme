@@ -1,0 +1,12 @@
+包含三个预处理文件
+使用顺序:
+1 file_rename.ipynb
+2 stereo2mono.ipynb
+3 csv_reform.ipynb
+
+file_rename.ipynb根据.wav文件存储路径修改文件名。     i.e. /data/wav/E1/aa.wav <rename to> /data/wav/E1/E10001.wav 
+ （若后缀为.mp3，则改名后将mp3转换为wav）              /data/wav/E1/bb.wav <rename to> /data/wav/E1/E10002.wav
+                                     
+stereo2mono.ipynb将双声道音频转换为单声道音频(分离出左右声道，任取其一作为音频)
+
+csv_reform.ipynb将在原始.ndx文件后添加append的音频对照

@@ -1,0 +1,5 @@
+for i in $1*.mp3;
+do
+ffmpeg -i "$i" -f wav -y "${i}.wav";
+done
+find $1*.mp3|xargs rm -rf
